@@ -1,0 +1,29 @@
+header {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+div#center {
+    text-align: center;
+}
+
+div#ladoalado {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+div#meio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+header img{
+    border-radius: 50%;
+}
