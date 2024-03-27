@@ -4,6 +4,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 30px;
+    border-style:outset;
 }
 
 div#center {
@@ -16,6 +17,7 @@ div#ladoalado {
     align-items: center;
     justify-content: space-around;
     padding: 30px;
+    border-style:outset;
 }
 
 div#meio {
@@ -26,4 +28,23 @@ div#meio {
 }
 header img{
     border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-style:solid;
+      }
+
+footer li:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+* {
+    font-family:'Segoe UI'
 }
