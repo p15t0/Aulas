@@ -1,4 +1,4 @@
-header {
+div#abertura {
     background-color: aliceblue;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ div#meio {
     justify-content: space-around;
     padding: 30px;
 }
-header img{
+div#abertura img{
     border-radius: 50%;
 }
 
