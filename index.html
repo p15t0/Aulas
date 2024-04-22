@@ -3,94 +3,120 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <title>Currículo Virtual</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
-<body> 
+<body>
 
-    <body style="background-color:aquamarine">
+    <header>
+        <a href="#" class="logo">LANGA</a>
 
-            <h1 style="border-style:dotted; text-align: center;">Currículo Virtual</h1>
-            <div id="abertura">
-                <h1>Guilherme Montinho Langa</h1>
-                <img width="400px" src="imagens/channels4_profile.jpg">
-            </div>
+        <nav class="barra">
+            <a href="#">Início</a>
+            <a href="#sobremim">Sobre Mim</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#experiencias">Habilidades</a>
+        </nav>
+        <a href="#formcontato" class="botaocontato">Me Contate</a>
+    </header>
 
-            <h2 style="text-align: center;">Sobre mim:</h2>
-            <p1 style="text-align: center;">Meu nome é Guilherme Montinho Langa, tenho 19 anos, sou de Vitória, ES, e estou cursando Ciência da
-                Computação na UVV. Adoro
-                a área de exatas e, em especial, sigo a paixão de meu pai pela área da tecnologia. Amo me desafiar para
-                resolver problemas complexos e achar soluções criativas. </p1>
-        <div id="meio">
-            <div id="habilidades">
-                <h2>Minhas habilidades:</h2>
-                    <li>Técnico em Eletrotécnica, formado no IFES</li>
-                    <li>Sei inglês</li>
-                    <li>Programador novato</li>
-                    <li>Proativo para aprender novas coisas</li>
-                    <li>Coach profissional</li>
-            
-            </div>
-            <div id="experiências">
-                <h2>Minhas experiências:</h2>
-                <table border="1">
-                    <thead>
-                        <th>Nome da Empresa</th>
-                        <th>Cargo</th>
-                        <th>Salário</th>
-                        <th>Observação</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>UVV</td>
-                            <td>Aluno</td>
-                            <td>Negativo</td>
-                            <td>Sofri</td>
-                        </tr>
-                        <tr>
-                            <td>IFES</td>
-                            <td>Aluno</td>
-                            <td>Nenhum</td>
-                            <td>Sofri x2</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">Desenvolvido por Guilherme Montinho Langa</td>
-                        </tr>
-                    </tfoot>
-                </table>
+    <section class="home">
+        <div class="conteudohome" style="max-width: 800px;">
+            <h3 style="font-size: 42px;">Oi,</h3>
+            <h1 style="font-size: 62px;">Sou Guilherme Montinho Langa</h1>
+            <p>Estudante de Ciência da Computação na UVV. Aprendendo a me tornar um programador expert.</p>
+            <div class="botoes">
+                <a href="#formcontato" class="botao1">Me contrate</a>
+                <a href="#experiencias" class="botao2">Experiências</a>
             </div>
         </div>
-        <div id="ladoalado">
-            <div id="contato">
-                <h2>Contato:</h2>
-                <form>
-                    <label for="email">Email</label><br>
-                    <input type="text" name="email"><br>
-                    <label for="mensagem">Mensagem</label><br>
-                    <textarea name="mensagem" rows="7"></textarea><br>
-                    <label for="data">Data</label><br>
-                    <input type="date" name="data">
-                    <input type="submit">
-                </form>
+        <div class="imagemhome">
+            <img src="imagens/fotoprincipal.png">
+        </div>
+    </section>
+
+    <section class="sobremim" id="sobremim">
+        <div class="imagemsobremim">
+            <img src="imagens/sobremim2.png">
+        </div>
+        <div class="conteudosobremim">
+            <h2>Sobre mim</h2>
+            <h3>Estudante</h3>
+            <p>Sou de Vitória, tenho 19 anos e estou cursando Ciência da Computação na UVV. Adoro a área de exatas e, em
+                especial, sigo a paixão de meu pai pela área da tecnologia. Amo me desafiar para resolver problemas
+                complexos e achar soluções criativas.</p>
+            <a href="#experiencias" class="botao2">Experiências</a>
+        </div>
+    </section>
+
+    <section class="exphab" id="experiencias">
+        <div class="experiencias">
+            <h1 style="font-size: 62px;">Minhas Experiências</h1>
+            <ul>
+                <li>Formado no Ensino Médio pelo IFES</li>
+                <li>Técnico em Eletrotécnica pelo IFES</li>
+                <li>Estudante de Ciências da Computação na UVV</li>
+            </ul>
+        </div>
+        <div class="habilidades">
+            <h1 style="font-size: 62px;">Minhas Habilidades</h1>
+            <ul>
+                <li>Linguagem C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contatoeredesocial" id="contato">
+        <h1 style="font-size: 62px;">Meus Contatos e Redes Sociais</h1>
+        <div class="conteudocontrs">
+            <div class="github">
+                <a href="https://github.com/p15t0"><img
+                        src="/imagens/github-logo-204.png"><br>GitHub<br>https://github.com/p15t0</a>
             </div>
-            <div id="mapa">
-                <iframe width="425" height="350"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-40.30081808567048%2C-20.356597349773484%2C-40.298897624015815%2C-20.352121130085827&amp;layer=mapnik&amp;marker=-20.35435925614675%2C-40.29985785484314"
-                    style="border: 1px solid black"></iframe><br /><small><a
-                        href="https://www.openstreetmap.org/?mlat=-20.35436&amp;mlon=-40.29986#map=18/-20.35436/-40.29986">Ver
-                        mapa maior</a></small>
+            <div class="gmail">
+                <img src="/imagens/envelope-solid-204.png"><br>Email<br>guilherme1montinho@gmail.com
             </div>
         </div>
-        <footer>
-        <h2>Meus links e outras formas de contato:</h2>
-     <ul>
-           <li><a href="https://github.com/p15t0"> <img width="30px" src="imagens/25231.png">GitHub</a></li>
-           <li><img width="30px" src="imagens/112-gmail_email_mail-512.jpg"> guilherme1montinho@gmail.com</li>
-           <li><img width="30px" src="imagens/WhatsApp.jpg">(27)99258-3871</li>
+    </section>
+
+    <section class="formcontato" id="formcontato">
+        <h2>Me Contate</h2>
+
+        <form>
+            <div class="formulario">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="Email">
+                <input type="numero" placeholder="Número de Telefone">
+                <input type="text" placeholder="Assunto">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+            <input type="submit" value="Enviar" class="botao1">
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/p15t0"><img src="/imagens/github-logo-48.png"></a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <a href="#sobremim">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#formcontato">Contato</a>
+            </li>
         </ul>
+        <p>Portfolio feito por Guilherme Montinho Langa</p>
     </footer>
-    </body>
-
-</html>

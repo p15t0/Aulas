@@ -1,50 +1,281 @@
-div#abertura {
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
-    border-style:outset;
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-div#center {
-    text-align: center;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-div#ladoalado {
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
-    border-style:outset;
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-div#meio {
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 50px orangered;
+
+}
+
+.barra a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.barra a:hover {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.botaocontato {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.home {
+    width: 100%;
+    min-height: 900px;
+    background: rgb(241, 241, 241);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px;
+    gap: 112px;
+    padding: 30px 12% 0;
 }
-div#abertura img{
+
+.conteudohome p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.botoes {
+    width: 345px;
+    display: flex;
+    gap: 8px;
+}
+
+.botao1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.botao1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.botao2 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.botao2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.imagemhome img {
+    border-radius: 50%;
+    width: 550px;
+
+}
+
+.sobremim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 160px;
+    background: black;
+}
+
+.sobremim img {
+    width: 550px;
     border-radius: 50%;
 }
 
-footer {
+.conteudosobremim h2 {
+    color: white;
+    font-size: 42px;
+}
+
+.conteudosobremim h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.conteudosobremim p {
+    color: white;
+    font-size: 20px;
+    margin: 32px 0 48px;
+}
+
+.exphab {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    gap: 112px;
+    padding: 30px 12% 0;
+    justify-content: space-around;
+}
+
+.experiencias li {
+    font-size: 26px;
+    margin: 32px 0 48px;
+    font-weight: 600;
+}
+
+.habilidades li {
+    text-align: right;
+    font-size: 26px;
+    margin: 32px 0 48px;
+    font-weight: 600;
+}
+
+.contatoeredesocial {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 8% 8%;
+    gap: 160px;
+    background: black;
+    color: white;
+}
+
+.conteudocontrs {
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    margin-top: 50px;
+
+}
+
+.conteudocontrs a {
+    color: white;
+}
+
+.formcontato h2 {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.formcontato form {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+
+.formulario input,
+.formcontato textarea {
+    width: 100%;
+    padding: 24px;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: 13px;
+    margin: 16px 0;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+footer .social a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    transform: scale(1.2)translateY(-10px);
 }
 
 footer ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        border-style:solid;
-      }
-
-footer li:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.075);
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-* {
-    font-family:'Segoe UI'
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+footer p {
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
 }
